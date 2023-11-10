@@ -4,7 +4,6 @@ def recognize_speech(trigger_word,assistant_trigerred):
     from chat import chat
 
     timeout_duration = 5
-
     recognizer = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening...")
@@ -16,10 +15,11 @@ def recognize_speech(trigger_word,assistant_trigerred):
         print("Recognizing...")
         recognizing = st.empty()
         recognizing.write("Recognizing.....")
-        text = recognizer.recognize_google(audio)
-        print("You said: " + text)
+        recognized_text = recognizer.recognize_google(audio)
+        print("You said: " + recognized_text)
         recognizing.empty()
-        if trigger_word in text.lower():
+
+        if trigger_word.lower() in recognized_text.strip().lower():
             print("triggered")
             assistant_trigerred = True
             return(assistant_trigerred)

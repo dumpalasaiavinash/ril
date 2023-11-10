@@ -10,7 +10,7 @@ from recognize_speech import recognize_speech
 # --server.headless true
 # streamlit run .\new_main.py --server.headless true    # command for running
 
-trigger_word = "hello"
+trigger_word = "Hello Raj"
 assistant_trigerred = False
 raw_speech_text = ""
 playspeed = 0
@@ -27,6 +27,7 @@ def page_initiation(assistant_trigerred):
             st.write("say "+ trigger_word + " to initiate a conversation")
             flag = flag + 1
             assistant_trigerred = recognize_speech(trigger_word,assistant_trigerred)
+            print(assistant_trigerred,"assistant")
     return(assistant_trigerred)
         
 

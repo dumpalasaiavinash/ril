@@ -15,7 +15,6 @@ def speech_to_text():
     return(raw_speech_text)
 
 
-
 ##################### for testing ########################## 
 # import speech_recognition as sr
 # from google.cloud import speech_v1p1beta1 as speech

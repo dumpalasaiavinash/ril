@@ -1,8 +1,9 @@
 import speech_recognition as sr
 import streamlit as st
-from speech_to_text import speech_to_text
+# from speech_to_text import speech_to_text
 from animation import animation
 from text_to_speech import text_to_speech
+from Cloud_record_and_transcribe import speech_to_text
 from recognize_speech import recognize_speech
 
 # st.set_option('server.headless', True)  # Set headless mode to True
@@ -63,7 +64,7 @@ def chat():
     with botchat.container():
         flag = animation(1,flag)
         flag = flag + 1
-        if raw_speech_text == "":
+        if raw_speech_text == "" or raw_speech_text == None:
             result = "Sorry I didn't get you, Can you repeat again"
         else:
             result = "Sure I will search and fetch you the results"

@@ -77,22 +77,22 @@ def chat():
             if raw_speech_text == "" or raw_speech_text == None:
                 result = "Sorry I didn't get you, Can you repeat again"
             else:
-                result = "Sure I will search and fetch you the results"
-                print("I am in midde ese")
-            with st.chat_message("BOT"):
-                st.write(result)
+                # result = "Sure I will search and fetch you the results"
+                # print("I am in midde ese")
+                # with st.chat_message("BOT"):
+                #     st.write(result)
             # text_to_speech(result)
-        botchat.empty()
-        with botchat.container():
-            flag = animation(0,flag)
-            flag = flag + 1
-            result = "Sure I will search and fetch you the results"
-            with st.chat_message("BOT"):
-                st.write(result)
-        botchat.empty()
-        userchat.empty()
-        print(raw_speech_text)
-        return(flag)
+                botchat.empty()
+                with botchat.container():
+                    flag = animation(0,flag)
+                    flag = flag + 1
+                    result = "Sure I will search and fetch you the results"
+                    with st.chat_message("BOT"):
+                        st.write(result)
+                # botchat.empty()
+                # userchat.empty()
+                print(raw_speech_text)
+                return(flag)
     else:
         print("went to else")
 

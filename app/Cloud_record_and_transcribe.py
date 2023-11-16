@@ -38,9 +38,7 @@ def speech_to_text():
 
     def speech_to_text(audio_input):
         # Imports the Google Cloud client library
-
         print("started Transcription")
-
         # Instantiates a client
         client = speech.SpeechClient()
         # # Load the audio file

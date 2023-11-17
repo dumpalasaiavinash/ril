@@ -47,15 +47,15 @@ wv.write("recording1.wav", recording, freq, sampwidth=2)
 
 client = speech.SpeechClient()
 # # Load the audio file
-import io
-audio_file = 'male.wav'
-with io.open(audio_file, 'rb') as f:
-    content = f.read()
+# import io
+# audio_file = 'male.wav'
+# with io.open(audio_file, 'rb') as f:
+#     content = f.read()
 
 # The name of the audio file to transcribe
 gcs_uri = "gs://cloud-samples-data/speech/VER_video_series/Anu1.wav"
-# audio =  speech.RecognitionAudio(uri=gcs_uri)
-audio =  speech.RecognitionAudio(content = recording)
+audio =  speech.RecognitionAudio(uri=gcs_uri)
+# audio =  speech.RecognitionAudio(content = content)
 config = speech.RecognitionConfig(
     encoding=speech.RecognitionConfig.AudioEncoding.MP3,
     sample_rate_hertz=44100,

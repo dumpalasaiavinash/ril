@@ -31,19 +31,41 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "gcp_key/reliance-stt-95d847fb6fc
 client = speech.SpeechClient()
 # # Load the audio file
 import io
-audio_file = 'recorded_audio.flac'
-with io.open(audio_file, 'rb') as f:
-    content = f.read()
+# audio_file = 'recorded_audio.flac'
+# with io.open(audio_file, 'rb') as f:
+#     content = f.read()
 
 # The name of the audio file to transcribe
 gcs_uri = "gs://cloud-samples-data/speech/VER_video_series/Anu1.wav"
-# audio =  speech.RecognitionAudio(uri=gcs_uri)
-audio =  speech.RecognitionAudio(content = content)
+audio =  speech.RecognitionAudio(uri=gcs_uri)
+# audio =  speech.RecognitionAudio(content = content)
+
+custom_vocabulary = [
+                {
+                    "phrases":["well bore"],
+                    "boost":20
+                },
+                {
+                    "phrases":["well"],
+                    "boost":20
+                },
+                {
+                    "phrases":["rig"],
+                    "boost":20
+                },
+                {
+                    "phrases":["name", "is", "ana"],
+                    "boost":40
+                }
+                ]
+
+
 config = speech.RecognitionConfig(
-    language_code="en-US",
+    language_code="en-IN",
     model="latest_long",
+    speech_contexts = custom_vocabulary,
     # sample_rate_hertz=44100,
-    encoding = 'FLAC',
+    # encoding = 'FLAC',
 )
 # Detects speech in the audio file
 response = client.recognize(config=config, audio = audio)

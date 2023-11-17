@@ -36,7 +36,7 @@ def speech_to_text():
     def save_audio_to_flac(audio_data, filename, sample_rate=44100):
         sf.write(filename, audio_data, sample_rate, format='flac')
 
-    def speech_to_text(audio_input):
+    def cloud_speech_to_text(audio_input):
         # Imports the Google Cloud client library
         print("started Transcription")
         # Instantiates a client
@@ -53,28 +53,14 @@ def speech_to_text():
 
         custom_vocabulary = [
                 {
-                    "phrases":"well bore",
-                    "boost":20
+                    "phrases":["well bore","well","well name","rig manager","drilling","torque","day wise"],
+                    "boost":40
                 },
-                {
-                    "phrases":"well",
-                    "boost":20
-                },
-                {
-                    "phrases":"rig",
-                    "boost":20
-                },
-                {
-                    "phrases":"rig manager",
-                    "boost":20
-                }
                 ]
-        
-        # custom_vocabulary = ["well bore", "well", "rig", "rig manager"]  # Add your domain-specific words here
         audio =  speech.RecognitionAudio(content = content)
         config = speech.RecognitionConfig(
             encoding = 'FLAC',
-            language_code="en-US",
+            language_code="en-IN",
             model="telephony",
             # speech_contexts=[speech.SpeechContext(phrases=custom_vocabulary)],
             speech_contexts = custom_vocabulary
@@ -90,12 +76,11 @@ def speech_to_text():
     
     recorded_audio = record_until_silence()
     save_audio_to_flac(recorded_audio, recorded_file_name) # saving the recorded audio data to a FLAC file
-    raw_speech_text = speech_to_text(recorded_file_name)
-    # print(raw_speech_text)
+    raw_speech_text = cloud_speech_to_text(recorded_file_name)
     os.remove(recorded_file_name)
     return(raw_speech_text)
 
-
+# print(speech_to_text())
 ########################## noram stt ###################
 # def speech_to_text():
 #     import speech_recognition as sr

@@ -27,5 +27,6 @@ def recognize_speech(trigger_word,assistant_trigerred):
             return(assistant_trigerred)
     except sr.UnknownValueError:
         print("Could not understand the audio")
+        recognizing.empty()
     except sr.RequestError as e:
         print(f"Could not request results; {e}")

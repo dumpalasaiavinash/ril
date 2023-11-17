@@ -13,7 +13,7 @@ def speech_to_text():
         print("Recording...")
 
         audio_data = []
-        silence_counter = 0
+        silence_counter = 5
 
         def callback(indata, frames, time, status):
             if status:

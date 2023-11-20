@@ -7,7 +7,7 @@ __pycache__/
 *.so
 
 # GCp Key Folder
-app/gcp_key/*
+app/gcp_key/
 
 # Distribution / packaging
 .Python

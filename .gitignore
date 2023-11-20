@@ -6,9 +6,6 @@ __pycache__/
 # C extensions
 *.so
 
-# GCP Key Folder
-C:/Users/avinash.dumpala.TSPL/Desktop/reliance/ril/app/gcp_key/
-
 # Distribution / packaging
 .Python
 build/

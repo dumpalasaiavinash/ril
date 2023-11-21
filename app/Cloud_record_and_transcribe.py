@@ -4,6 +4,7 @@ def speech_to_text():
     import soundfile as sf
     import os
     from google.cloud import speech
+    from domain_specific_words import glossary,wells,terms
 
     # Set the path to your service account key file
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "gcp_key/reliance-stt-95d847fb6fc9.json"
@@ -52,8 +53,16 @@ def speech_to_text():
         # audio =  speech.RecognitionAudio(uri=gcs_uri)
 
         custom_vocabulary = [
+                # {
+                #     "phrases":glossary,
+                #     "boost":10
+                # },
                 {
-                    "phrases":["well bore","well","well name","rig manager","drilling","torque","day wise"],
+                    "phrases":wells,
+                    "boost":40
+                },
+                {
+                    "phrases":terms,
                     "boost":40
                 },
                 ]
@@ -80,7 +89,7 @@ def speech_to_text():
     os.remove(recorded_file_name)
     return(raw_speech_text)
 
-# print(speech_to_text())
+print(speech_to_text())
 ########################## noram stt ###################
 # def speech_to_text():
 #     import speech_recognition as sr

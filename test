@@ -1,0 +1,1 @@
+cleaned_list = [re.sub(r'^.*[\n\)]', '', item) if re.search(r'[\n\)]', item) else item for item in original_list]

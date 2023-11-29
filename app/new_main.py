@@ -83,6 +83,19 @@ def chat():
     return(flag)
 
 
+import requests
+
+name = "RAJ"
+gender = "M"
+data = {
+    "name" : name,
+    "gender" : gender,
+}
+headers = {"Content-type":"application/json"}
+response = requests.post("http://localhost:8501/data",json=data,headers=headers)
+print(response.content)
+print(response.headers)
+print(response.status_code)
     
 while True:
     is_trigerred = page_initiation(assistant_trigerred)

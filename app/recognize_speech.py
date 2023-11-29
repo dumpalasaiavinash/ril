@@ -3,7 +3,7 @@ def recognize_speech(trigger_word,assistant_trigerred):
     import streamlit as st 
     from chat import chat
 
-    timeout_duration = 5
+    # timeout_duration = 5
     recognizer = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening...")

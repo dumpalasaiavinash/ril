@@ -4,10 +4,11 @@ def speech_to_text():
     import soundfile as sf
     import os
     from google.cloud import speech
-    from domain_specific_words import glossary,wells,terms
+    from domain_specific_words import glossary,wells,terms,word,alphabets,numbers
+    from combine_single_letter_words import combine_single_letter_words
 
     # Set the path to your service account key file
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "gcp_key/reliance-stt-95d847fb6fc9.json"
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "gcp_key/reliance-stt-39902e2b2216.json"
     recorded_file_name = "recorded_audio_old.flac"
 
     def record_until_silence(sample_rate=44100, silence_threshold=0.01):
@@ -53,24 +54,29 @@ def speech_to_text():
         # audio =  speech.RecognitionAudio(uri=gcs_uri)
 
         custom_vocabulary = [
-                # {
-                #     "phrases":glossary,
-                #     "boost":10
-                # },
                 {
-                    "phrases":wells,
+                    "phrases":word,
                     "boost":40
                 },
                 {
                     "phrases":terms,
-                    "boost":40
+                    "boost":20
                 },
+                {
+                    "phrases":alphabets,
+                    "boost":5
+                },
+                {
+                    "phrases":numbers,
+                    "boost":1
+                },
+                 
                 ]
         audio =  speech.RecognitionAudio(content = content)
         config = speech.RecognitionConfig(
             encoding = 'FLAC',
             language_code="en-IN",
-            model="telephony",
+            model="default",
             # speech_contexts=[speech.SpeechContext(phrases=custom_vocabulary)],
             speech_contexts = custom_vocabulary
             # sample_rate_hertz=44100,   
@@ -83,55 +89,49 @@ def speech_to_text():
             return(( result.alternatives [0]. transcript))
     
     
-    recorded_audio = record_until_silence()
-    save_audio_to_flac(recorded_audio, recorded_file_name) # saving the recorded audio data to a FLAC file
+    # recorded_audio = record_until_silence()
+    # save_audio_to_flac(recorded_audio, recorded_file_name) # saving the recorded audio data to a FLAC file
     raw_speech_text = cloud_speech_to_text(recorded_file_name)
-    os.remove(recorded_file_name)
-    return(raw_speech_text)
+    raw_speech_text = raw_speech_text.lower()
+    # os.remove(recorded_file_name)
+    print("pre: ",raw_speech_text)
 
-print(speech_to_text())
-########################## noram stt ###################
-# def speech_to_text():
-#     import speech_recognition as sr
+# if well name is present then combine the single letter words
+    from configparser import ConfigParser 
+    configuration = ConfigParser() 
+    configuration.read('config.ini')
+    well_types = configuration.get('well_types','wells')
+    well_types = (well_types.split(','))
 
-#     r = sr.Recognizer()
-#     speech = sr.Microphone(device_index=1)
-#     with speech as source:    
-#         audio = r.adjust_for_ambient_noise(source)    
-#         audio = r.listen(source)
-#     try:    
-#         raw_speech_text = r.recognize_google(audio , language = 'en-IN')
+    raw_speech_list = raw_speech_text.split(" ")
+    check = any(item in raw_speech_list for item in well_types)
+    if check:
+        processed_speech = combine_single_letter_words(raw_speech_text)
+    else:
+        processed_speech = raw_speech_text
 
-#     except sr.UnknownValueError:
-#         print("Speech Recognition could not understand audio")
-#         raw_speech_text = ""   
-#     return(raw_speech_text)
+    return(processed_speech)
+raw_speech = speech_to_text()
+print(raw_speech)
 
-# print(speech_to_text())
+# import difflib
+# from domain_specific_words import glossary,wells,terms,word,alphabets,numbers
+# def find_most_similar_word(sample_sentence, word_list):
+#     # Extract the word after "well" in the sample sentence
+#     words_after_well = sample_sentence.split("well")[1].split()[0]
+
+#     # Find the most similar word from the list
+#     most_similar_word = difflib.get_close_matches(words_after_well, word_list, n=1, cutoff=0.7)
+
+#     return most_similar_word[0] if most_similar_word else None
 
 
-########################### from file #############
-# import speech_recognition as sr
 
-# def flac_to_text(flac_file_path):
-#     recognizer = sr.Recognizer()
+# # List of words
+# word_list = wells
 
-#     # Load the FLAC file
-#     with sr.AudioFile(flac_file_path) as audio_file:
-#         audio_data = recognizer.record(audio_file)
+# # Find the most similar word
+# result = find_most_similar_word(processed_text, word_list)
 
-#         try:
-#             # Use the Google Web Speech API for speech recognition
-#             text = recognizer.recognize_google(audio_data)
-#             return text
-#         except sr.UnknownValueError:
-#             print("Google Web Speech API could not understand audio")
-#         except sr.RequestError as e:
-#             print(f"Could not request results from Google Web Speech API; {e}")
-
-# if __name__ == "__main__":
-#     flac_file_path = "recorded_audio.flac"
-#     result = flac_to_text(flac_file_path)
-
-#     if result:
-#         print(f"Text from FLAC file: {result}")
+# # Print the result
+# print("Most similar word:", result)

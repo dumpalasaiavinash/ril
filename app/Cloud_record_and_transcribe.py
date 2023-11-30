@@ -77,8 +77,10 @@ def speech_to_text():
             encoding = 'FLAC',
             language_code="en-IN",
             model="default",
-            # speech_contexts=[speech.SpeechContext(phrases=custom_vocabulary)],
             speech_contexts = custom_vocabulary
+            # use_enhanced=True,
+            # speech_contexts=[speech.SpeechContext(phrases=custom_vocabulary)],
+            
             # sample_rate_hertz=44100,   
         )
         # Detects speech in the audio file
@@ -89,28 +91,31 @@ def speech_to_text():
             return(( result.alternatives [0]. transcript))
     
     
-    # recorded_audio = record_until_silence()
-    # save_audio_to_flac(recorded_audio, recorded_file_name) # saving the recorded audio data to a FLAC file
+    recorded_audio = record_until_silence()
+    save_audio_to_flac(recorded_audio, recorded_file_name) # saving the recorded audio data to a FLAC file
     raw_speech_text = cloud_speech_to_text(recorded_file_name)
-    raw_speech_text = raw_speech_text.lower()
-    # os.remove(recorded_file_name)
-    print("pre: ",raw_speech_text)
+    if raw_speech_text != None:
+        raw_speech_text = raw_speech_text.lower()
+        # os.remove(recorded_file_name)
+        print("pre: ",raw_speech_text)
+#################################################   Transcribing complete #################################
+    # if well name is present then combine the single letter words
+        from configparser import ConfigParser 
+        configuration = ConfigParser() 
+        configuration.read('config.ini')
+        well_types = configuration.get('well_types','wells')
+        well_types = (well_types.split(','))
 
-# if well name is present then combine the single letter words
-    from configparser import ConfigParser 
-    configuration = ConfigParser() 
-    configuration.read('config.ini')
-    well_types = configuration.get('well_types','wells')
-    well_types = (well_types.split(','))
+        raw_speech_list = raw_speech_text.split(" ")
+        check = any(item in raw_speech_list for item in well_types)
+        if check:
+            processed_speech = combine_single_letter_words(raw_speech_text)
+        else:
+            processed_speech = raw_speech_text
 
-    raw_speech_list = raw_speech_text.split(" ")
-    check = any(item in raw_speech_list for item in well_types)
-    if check:
-        processed_speech = combine_single_letter_words(raw_speech_text)
+        return(processed_speech)
     else:
-        processed_speech = raw_speech_text
-
-    return(processed_speech)
+        return(raw_speech_text)
 raw_speech = speech_to_text()
 print(raw_speech)
 

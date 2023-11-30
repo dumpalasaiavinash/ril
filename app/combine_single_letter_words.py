@@ -51,4 +51,4 @@ def combine_single_letter_words(raw_speech):
         index = end
     result.append(" ".join(words[end:]))
     return(' '.join(result))
-print(combine_single_letter_words("who is the age of the well kgd6 in the well k g d 675"))
+# print(combine_single_letter_words("who is the age of the well kgd6 in the well k g d 675"))

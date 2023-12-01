@@ -1,4 +1,4 @@
-wells = ['MJ-N4A','MJ-N2','MJ-N1','MJ-N3','MJ-NE1','MJ-C1','MJ-C2','MJ-C3','MJ-N4A','MJ-N2','MJ-N1','MJ-N3','MJ-NE1','MJ-C1','MJ-C2','MJ-C3', 'C2','E2','Q1-DEV1','AA1-Dev2','AA1-DEV1', 'Ar1-Dev1','R1-Dev2','Ar2-Dev1','AV1-Dev1','R1-Dev1','AV1-ST2']
+wells = ['KGD6AK3','KGD6D6(Sat)','KGD6D19(Sat)','KGD6D22(Sat)','KGD6D30(O Sat)','KGD6D29(O Sat)','KGD6AS','KGD6Osat','KGD6BA1','KGD6BA2','KGD6D1','KGD6F','KGD6H','KGD6K','KGD6L','KGD6M','KGD6MB','KGD6MG','KGD6MK','KGD6P1','KGD6P2','KGD6SB','KGD6SH2','KGD6T','KGD6W','KGD6D55(MJ)','KGD6D2(Sat)','KGD6D26(MA)','KGD6D34(R-Cluster)','KGD6AB1','KGD6MW','KGD6ME','KGD9A1','KGD9A2','KGD9B3']
 
 alphabets = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','V','X','Y','Z']
 # alphabets = ['']

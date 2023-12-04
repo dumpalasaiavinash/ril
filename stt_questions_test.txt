@@ -1,0 +1,189 @@
+what is the spud date of well KG-D6-A6-PH?
+who is the drilling contractor of well KG-D6-A6-PH?
+what is the rig used for well KG-D6-A6-PH?
+who is the supervisor of drilling operations in well KG-D6-A6-PH?
+what is the block of well KG-D6-A6-PH?
+who is the rig manager of well KG-D6-A6-PH?
+who is the engineer  of drilling operations of well KG-D6-A6-PH?
+what is the planned days of drilling operations for well KG-D6-A6-PH?
+what is the 24 hrs summary for drilling operations in well KG-D6-A6-PH for the Report Date 10/31/2008?
+what operation was performed between 06:00 to 10:15 in well  KG-D6-A6-PH for Report Date 10/31/2008?
+Total Number of personnel during drilling operations in well  KG-D6-A6-PH for Report Date 10/31/2008?
+Support Craft during drilling operations in well KG-D6-A6-PH for Report Date 10/31/2008?
+Weather Details during drilling operations in well KG-D6-A6-PH for Report Date 10/31/2008?
+Drilling parameters of drilling operations in well KG-D6-A6-PH for Report Date 10/31/2008?
+what operation was performed between 10:15 to 11:15 in well  KG-D6-A6-PH for Report Date 10/31/2008?
+what was the 24 hr forecast of drilling operations in well  KG-D6-A6-PH for Report Date 10/31/2008?
+what is the spud date of well KGD6-MJ-N3?
+who is the drilling contractor of well KGD6-MJ-N3?
+what is the rig used for well KGD6-MJ-N3?
+who is the supervisor of drilling operations in well KGD6-MJ-N3?
+what is the block of well KGD6-MJ-N3?
+who is the rig manager of well KGD6-MJ-N3?
+who is the engineer  of drilling operations of well KGD6-MJ-N3?
+what is the planned days of drilling operations for well KGD6-MJ-N3?
+what is the 24 hrs summary for drilling operations in well KGD6-MJ-N3for the Report Date 18-Jul-2023?
+what operation was performed between 06:00 to 00:00 in well  KGD6-MJ-N3 for Report Date 18-Jul-2023?
+Total Number of personnel during drilling operations in well  KGD6-MJ-N3 for Report Date 18-Jul-2023?
+Support Craft during drilling operations in well KGD6-MJ-N3 for Report Date 18-Jul-2023?
+Weather Details during drilling operations in well KGD6-MJ-N3 for Report Date 18-Jul-2023?
+Drilling parameters of drilling operations in well KGD6-MJ-N3 for Report Date 18-Jul-2023?
+what was the 24 hr forecast of drilling operations in well  KGD6-MJ-N3 for Report Date 18-Jul-2023?
+what is the rig type of rig used in drilling operations of well KGD6-MJ-N3?
+what is the well type of well KGD6-MJ-N3?
+Is there any NPT activity in well KGD6-MJ-N3 for Report Date 18-Jul-2023?
+what Is the total NPT duration for Report Date 17-Aug-2023 in well KGD6-MJ-N3?
+what is the 24hrs forecast of drilling operations in well KGD6-MJ-N3 for report date 17-Aug-2023?
+what class of operation was performed between 01:15 to 01:45 in well  KGD6-MJ-N3 for Report Date 17-Aug-2023?
+what is the spud date of well KGD6-MJ-N4A?
+who is the drilling contractor of well KGD6-MJ-N4A?
+what is the rig used for well KGD6-MJ-N4A?
+who is the supervisor of drilling operations in well KGD6-MJ-N4A?
+what is the block of well KGD6-MJ-N4A?
+who is the rig manager of well KGD6-MJ-N4A?
+who is the engineer  of drilling operations of well KGD6-MJ-N4A?
+what is the planned days of drilling operations for well KGD6-MJ-N4A?
+what is the 24 hrs summary for drilling operations in well KGD6-MJ-N4A for the Report Date 07-Dec-2022?
+what operation was performed between 02:30 to 03:00 in well  KGD6-MJ-N4A for Report Date 07-Dec-2022?
+Total Number of personnel during drilling operations in well  KGD6-MJ-N4A for Report Date 07-Dec-2022?
+Support Craft during drilling operations in well KGD6-MJ-N4A for Report Date 07-Dec-2022?
+Weather Details during drilling operations in well KGD6-MJ-N4A for Report Date 07-Dec-2022?
+Drilling parameters of drilling operations in well KGD6-MJ-N4A for Report Date 07-Dec-2022?
+what was the 24 hr forecast of drilling operations in well  KGD6-MJ-N4A for Report Date 07-Dec-2022?
+what is the rig type of rig used in drilling operations of well KGD6-MJ-N4A?
+what is the well type of well KGD6-MJ-N4A?
+Is there any NPT activity in well KGD6-MJ-N4A for Report Date 07-Dec-2022?
+what Is the total NPT duration for Report Date 07-Dec-2022 in well KGD6-MJ-N4A?
+what is the 24hrs forecast of drilling operations in well KGD6-MJ-N4A for report date 07-Dec-2022?
+what class of operation was performed between 05:30 to 11:00 in well  KGD6-MJ-N4A for Report Date 07-Dec-2022?
+What is the wellbore name being drilled for well KGD6-MJ-N4A on the  Report Date 07-Dec-2022?
+what is the latitude and longitude of well KGD6-MJ-N4A?
+When dd we run the Wireline Formation Tester Tool for the well KGD6–AA1-Dev1-P1
+At what depth the RCI tool was run for 12.25” open-hole
+What is the water depth of the well KGD6-AA1-Dev1
+What is the location of KG-DWN-98/3 block
+What is the block name for the well KGD6-AA1-Dev1?
+Which company has drilled the Development well KGD6-AA1-Dev1
+what is the Offset well for KGD6-AA1-Dev2 ?
+What is the Pilot Hole depth for the well KGD6-AA1-Dev2-P1
+What is the Well Fluid used for 12.25” RCI tool run for the well KGD6-AA1-Dev2
+What is the Fluid Density for 12.25” RCI tool run for the well KGD6-AA1-Dev2 
+At what depth water samples were captured in MPSR bottles for the well KGD6-MJ-NE1-P1
+At what depth Gas samples captured in SPMC bottles for the well KGD6-MJ-NE1-P1 
+At what depth the Tool failure occurred  during the Single Probe MDT Run 4 for the well KGD6-MJ-NE1-P1 
+What was the reason for the Tool failure during the Single Probe MDT Run 4 for the well KGD6-MJ-NE1-P1 
+What is the Formation Water Salinity for MPSR#3580 at wellsite 
+How many pretest attempts were successful  for the well KGD6-F1
+What is Run 2 Tool String configuration  for the well KGD6-F1
+what are the Ch4 gas composition for all the 3 samples colledted for the well KGD6-F1
+What is the unt of Turbidity in Analysis Report for the well KGD6-F1
+What is the difference between last gas point and first water point for the well KGD6-F1
+What I sthe LFA INDICATION in the Sample Summary for the well KGD6-B6
+What I sthe RIL reference no. for the well KGD6-B6
+What is the Acid Content in the FORMATION WATER ANALYSIS REPORT for the well KGD6-B6
+Why was the Wireline Formation Tester Tool was run in the well KG D6 B15 
+Which  is the First Development well drilled by Reliance Industries Limited within the KGDWN-98/3
+What I sthe Spud date of the well KGD+B18:D366‐D1
+What is the Total depth of the well KGD6‐D1
+"Which is the fifteenth exploratory well drilled by Reliance Industries Ltd.within the
+KG-DWN-98/3 Contract Area"
+The Kick-off point for the well KGD6-E1
+What was the deviation (inclnation) for the well  KGD6-E1
+What was the azimuth for the well KGD6-E1
+what is the proposed location fo rthe well KGD6-E1
+What was the Cretaceous depth for the well MJ-A1-ST1
+Which tool was used for 10.5” hole and run  #9 for the well MJ-A1-ST1
+How many wireline logs were carried out for the reservoir section of  well MJ-A1-ST1
+Which model was used for the Petrophysical Evaluation of the well KGD6-MJA2
+At whatdepth MDT was conducted in the well KGD6-MJ-A2 
+What are the Objectives for the well KG-D6-Q1
+What was the Rig used for the well KG-D6-Q1
+What was the Viscosity for 36” hole section of the well KG-D6-Q1
+What was the result of Wire line Logging in 13 ½” hole for the well KG-D6-Q1
+In which field the Well KGD6-B7-SUB1-PH was drilled
+What was the Side Track Date for the well the Well KGD6-B7-SUB1-PH
+What is the A100 Sand 1 top and bottom depth for the well KGD6-A1-SUB-ST1
+Who has acquired the LWD and Wireline data for the well KG-D6-AS1
+What is Report No. for the well KGD6-B16-I2
+The FORMATION EVALUATION REPORT was Supervised by whom for the well KGD6-B16-I2
+How is the formation resistivity factor F is defined for the KGD6-B16-I2
+What was the 16” liner depth for the well KG-D6-MJ-N3
+When did the Rig DDKG1 commenced Milling Operations for the MJ-N3 
+What was the TD date for the well KG-D6-MJ-N3-ST1
+What was the locatoin of the Warehouse for the well KG-D6-MJ-N3-ST1
+What was the milled depth for the well KG-D6-MJ-N3-ST1
+What was the Rig Name for the well KGD6-MJ-C2
+What I sthe RKB Elevation for the well KGD6-MJ-C2
+What are the UTM Coordinates for the well KGD6-MJ-C2
+What are the Geographical Coordinates for the well KGD6-MJ-C2
+What is the Magnetic Field Strength for the well KGD6-MJ-C2
+At what depth the Screen & Gravel Pack Packer were set for the well KGD6-Q1-DEV1
+What was the Original RT Elevation (ORTE) for the well KGD6-Q1-DEV1
+What is the Maximum Well Dev (Reservoir) for the well KGD6-Q1-DEV1
+What was the Open Hole Interval for the well KGD6-Q1-DEV1
+What was the setting depth of TR-SCSSV Depth for the well KGD6-Q1-DEV1
+What is the Job No. for the well KG-D6-AA1-DEV2
+What is the Magnetic Dip Angle for the well KG-D6-AA1-DEV2
+How much is the Magnetic Declination for the well KG-D6-AA1-DEV2
+Who are the members of Field Support Group for the well  KG-D6-AA1-DEV2
+What is the 36”Hole size Start depth for the well KG-D6-AA1-DEV2
+What is the 26”Hole size Stop depth for the well KG-D6-AA1-DEV2
+What was the  completion date and time fof Phase-I (Drilling & LC) of well KGD6-R1-DEV2 
+Who is the operator fo rthe well  KGD6-R1-DEV2 
+how much is the Rotary Table Elevation fo rthe well  KGD6-R1-DEV2 
+What was the Programmed Depth fo rthe well  KGD6-R1-DEV2 
+How many Actual Days it took for Tophole to Lower Completion fo rthe well  KGD6-R1-DEV2 
+What was the Primary Objective for ther fo rthe well  KGD6-R1-DEV2 
+What was the 12-1/4” Production Hole Depth MDRT fo rthe well  KGD6-R1-DEV2 
+How many Number of Safety observations received 
+What was the Number of man-hrs.
+What s the Well Status of the well KGD6-AR1-Dev1
+What is the Spheroid location of the well  KGD6-AR1-Dev1
+What is the Rig and RTE of the well KGD6-AR1-Dev1
+What is the Rig On Location for the well KGD6-AR1-Dev1
+Was Well Testing conducted  for the well KGD6-AR1-Dev1
+Did we collect the Conventional Core for the well KGD6-AR1-Dev1 
+Which Packer Fluid was used 
+What was the HXT Orientatoin
+At which depth of Tubing Retrievable Safety valve was set
+How many interventions were observed while re entering the well 
+What is the RT to Seabed depth for the well KG-D6-AV1 ST1
+BHA Depth of 17 1/2” Intermediate Hole for the well KG-D6-AV1 ST1
+Durng which hole section the  BHA was stuck at 3087 m for the well KG-D6-AV1 ST1
+Pre-drill analyses conducted on which hole sections for the well KG-D6-AV1 ST1
+Show the Eatons Equation 5 for the well KG-D6-AV1 ST1 
+What is OBG in Eaton’s equation for pore pressure from sonic for the well  KG-D6-AV1 ST1 
+Attachment: 1 CD containd which information for the well  KG-D6-AV1 ST1 
+What does Part 2 Section 4 in INDEX show for the well KG-D6-MA_5H
+What is the test time for the Packer from below for the well KG-D6-MA_5H
+Why did the  FS-1 valve failed to close during POOH of GP service tool for the well KG-D6-MA_5H
+Whatis the Screen size of Drift Test  for the well KG-D6-MA_5H
+Who is the customer representative for the 5 1/2" Landing Nipple for the well KG-D6-MA_5H
+What is width Pilot Hole width for the well KG D6 AA1 at 50m off location and why  pilot hole drilled?
+ we are facing a problem Pulled out wet after plug job even after 15- 19bbl under displaced what are the impacts of the problem? 
+what is the block of well KG-D6-A6-PH on report date 10/31/2008?
+what is the spud date of well KG-D6-MJ-C3
+Support Craft during drilling operations in well KG-D6-A6-PH for Report Date 10/31/2008?
+what operation was performed between 10:15 to 11:15 in well  KG-D6-A6-PH for Report Date 10/31/2008?
+what is the block name of well KG-D6-A6-PH report date 10/31/2008?
+what is the 24 hrs summary for drilling operations in well KGD6-A6-PH for the Report Date 31/10/2008
+what is the spud date of well KG-D6-MJ-N4A for report date 23-Dec-2022?
+what is the 24 hrs summary for drilling operations in well KG-D6-MJ-N4A for the Report Date 23-Dec-2022
+what is the spud date of well KG-D6-MJ-N3 Report Date: 10-Aug-2023?
+what is total number of people on board for well name : K6D6-R1-DEV1 on date 04-Nov-2019 and well name : K6D6-R1-DEV1 on date 05-Nov-2019 and sum them ?  and provide all people from different company?
+what is the  rig drilled well kg d6 aa1
+young's modulus formula , expand the terms and it's applications
+location of well KG D6 B15
+rig manager of well KG D6 A6 PH
+What is the rig drilled well  KG D6 MJ C3
+which rig  drilled well KG D6 A6 PH?
+what is the latitude and longitude of well KGD6-MJ-N4A?
+What is the wellbore name being drilled for well KGD6-MJ-N4A on the  Report Date 07-Dec-2022?
+what  operation was performed between 05:30 to 11:00 in well  KGD6-MJ-N4A for Report Date 07-Dec-2022?
+Is there any NPT activity in well KGD6-MJ-N4A for Report Date 07-Dec-2022?
+what class of operation was performed between 01:15 to 01:45 in well  KGD6-MJ-N3 for Report Date 17-Aug-2023?
+what is the well type of well KGD6-MJ-C3?
+what was the 24 hr forecast of drilling operations in well  KGD6-MJ-N3 for Report Date 07-Aug-2023?
+Drilling parameters of drilling operations in well KGD6-MJ-N3 for Report Date 07-Aug-2023?
+
+

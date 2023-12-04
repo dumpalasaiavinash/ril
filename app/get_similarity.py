@@ -5,29 +5,37 @@ def get_next_words(text, pattern):
 
 
 
-import difflib
-from domain_specific_words import glossary,wells,terms,word,alphabets,numbers
-
-def find_most_similar_word(text, word_list):
+def find_most_similar_word(text):
+    import difflib
+    from domain_specific_words import wells
+    wells = map(lambda x:x.lower(), wells)
 
     # Extract the word after "well" in the sample sentence
     # words_after_well = sample_sentence.split("well")[1].split()[0]
     words_after_well = get_next_words(text,'well')
-    print(words_after_well)
+    # print(words_after_well)
 
     # Find the most similar word from the list
-    most_similar_word = difflib.get_close_matches(words_after_well, word_list, n=1, cutoff=0.7)
+    for i in words_after_well:
+        # print(i)
+        if i not in wells:
+            most_similar_word = difflib.get_close_matches(i, wells, n=1, cutoff=0.7)
+            # print(most_similar_word)
+            if most_similar_word:
+                text = text.replace(i,most_similar_word[0])
+            else:
+                text = text
 
-    return most_similar_word[0] if most_similar_word else None
+    
+    return(text)
 
 
 
-# List of words
-word_list = wells
-processed_text = "who is the age of the well Ar1Devs in the well Ar-Dev1"
-# Find the most similar word
-result = find_most_similar_word(processed_text, word_list)
 
-# Print the result
-print("Most similar word:", result)
+# processed_text = "who is the age of the well KGD6Os in the well KGD6D26MA"
+# # Find the most similar word
+# result = find_most_similar_word(processed_text)
+
+# # Print the result
+# print("Most similar word:", result)
 

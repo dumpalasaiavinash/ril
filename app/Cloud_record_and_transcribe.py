@@ -4,8 +4,9 @@ def speech_to_text():
     import soundfile as sf
     import os
     from google.cloud import speech
-    from domain_specific_words import glossary,wells,terms,word,alphabets,numbers
+    from domain_specific_words import glossary,wells,terms,crucial_words,alphabets,numbers,additional_terms
     from combine_single_letter_words import combine_single_letter_words
+    from get_similarity import find_most_similar_word,get_next_words
 
     # Set the path to your service account key file
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "gcp_key/reliance-stt-39902e2b2216.json"
@@ -55,7 +56,7 @@ def speech_to_text():
 
         custom_vocabulary = [
                 {
-                    "phrases":word,
+                    "phrases":crucial_words,
                     "boost":40
                 },
                 {
@@ -68,7 +69,15 @@ def speech_to_text():
                 },
                 {
                     "phrases":numbers,
-                    "boost":1
+                    "boost":5
+                },
+                {
+                    "phrases":glossary,
+                    "boost":10
+                },
+                {
+                    "phrases":additional_terms,
+                    "boost":5
                 },
                  
                 ]
@@ -97,7 +106,8 @@ def speech_to_text():
     if raw_speech_text != None:
         raw_speech_text = raw_speech_text.lower()
         # os.remove(recorded_file_name)
-        print("pre: ",raw_speech_text)
+        print("pre speech: ",raw_speech_text)
+
 #################################################   Transcribing complete #################################
     # if well name is present then combine the single letter words
         from configparser import ConfigParser 
@@ -110,33 +120,20 @@ def speech_to_text():
         check = any(item in raw_speech_list for item in well_types)
         if check:
             processed_speech = combine_single_letter_words(raw_speech_text)
+            print("processed Speech: ",processed_speech)
         else:
             processed_speech = raw_speech_text
 
-        return(processed_speech)
+        result_text = find_most_similar_word(processed_speech)
     else:
-        return(raw_speech_text)
-raw_speech = speech_to_text()
-print(raw_speech)
+        result_text = raw_speech_text
 
-# import difflib
-# from domain_specific_words import glossary,wells,terms,word,alphabets,numbers
-# def find_most_similar_word(sample_sentence, word_list):
-#     # Extract the word after "well" in the sample sentence
-#     words_after_well = sample_sentence.split("well")[1].split()[0]
-
-#     # Find the most similar word from the list
-#     most_similar_word = difflib.get_close_matches(words_after_well, word_list, n=1, cutoff=0.7)
-
-#     return most_similar_word[0] if most_similar_word else None
-
-
-
-# # List of words
-# word_list = wells
-
-# # Find the most similar word
-# result = find_most_similar_word(processed_text, word_list)
-
-# # Print the result
-# print("Most similar word:", result)
+        
+################### Similarity find for Well Names ####################
+    
+    return(result_text)
+    
+    
+    
+data = speech_to_text()
+print('Final_speech: ',data)

@@ -61,7 +61,7 @@ def speech_to_text():
                 },
                 {
                     "phrases":terms,
-                    "boost":20
+                    "boost":30
                 },
                 {
                     "phrases":alphabets,
@@ -127,13 +127,15 @@ def speech_to_text():
         result_text = find_most_similar_word(processed_speech)
     else:
         result_text = raw_speech_text
-
-        
-################### Similarity find for Well Names ####################
-    
+     
+################### Similarity find for Well Names done ####################
+    f = open("stt_out.txt", "w")
+    f.write(str(result_text))
+    f.close()
     return(result_text)
     
     
     
 data = speech_to_text()
 print('Final_speech: ',data)
+

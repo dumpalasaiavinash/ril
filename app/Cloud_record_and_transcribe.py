@@ -69,7 +69,7 @@ def speech_to_text():
                 },
                 {
                     "phrases":numbers,
-                    "boost":5
+                    "boost":1
                 },
                 {
                     "phrases":glossary,
@@ -87,10 +87,10 @@ def speech_to_text():
             language_code="en-IN",
             model="default",
             speech_contexts = custom_vocabulary
-            # use_enhanced=True,
-            # speech_contexts=[speech.SpeechContext(phrases=custom_vocabulary)],
+            ## use_enhanced=True,
+            ## speech_contexts=[speech.SpeechContext(phrases=custom_vocabulary)],
             
-            # sample_rate_hertz=44100,   
+            ## sample_rate_hertz=44100,   
         )
         # Detects speech in the audio file
         response = client.recognize(config=config, audio = audio)

@@ -15,7 +15,7 @@ def chat():
     return render_template("index.html",name=id)
 
 
-@views.route("/json")
+@views.route("/json", methods=['GET', 'POST'])
 def get_json():
     data = {
         'name' : "avi",
@@ -26,7 +26,7 @@ def get_json():
 @views.route("/data")
 def get_data():
     data = request.json
-    print(data)
+    print(data)     
     return jsonify(data)
 
 # for redirect 

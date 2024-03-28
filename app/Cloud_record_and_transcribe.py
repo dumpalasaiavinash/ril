@@ -12,7 +12,7 @@ def speech_to_text():
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "gcp_key/reliance-stt-39902e2b2216.json"
     recorded_file_name = "recorded_audio_old.flac"
 
-    def record_until_silence(sample_rate=44100, silence_threshold=0.01):
+    def record_until_silence(sample_rate=44100, silence_threshold=3):
         print("Recording...")
 
         audio_data = []
